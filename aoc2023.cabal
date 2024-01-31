@@ -1,0 +1,25 @@
+cabal-version:      3.4
+name:               aoc2023
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            NONE
+author:             Ganesh Sittampalam
+maintainer:         ganesh@earth.li
+-- copyright:
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable aoc2023
+    import:           warnings
+    main-is:          Main.hs
+    other-modules:
+        Day1
+    -- other-extensions:
+    build-depends:    base ^>=4.18.1.0
+    hs-source-dirs:   exe
+    default-language: GHC2021
